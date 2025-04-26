@@ -1,4 +1,4 @@
-package com.example.appointment_booking;
+package com.example.appointmentbooking;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
