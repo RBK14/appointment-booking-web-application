@@ -7,7 +7,6 @@ import com.example.appointmentbooking.dto.VerifyUserDto;
 import com.example.appointmentbooking.exception.UserNotVerifiedException;
 import com.example.appointmentbooking.exception.VerificationCodeExpiredException;
 import com.example.appointmentbooking.model.user.User;
-import com.example.appointmentbooking.repository.UserRepository;
 import com.example.appointmentbooking.service.authentication.AuthenticationService;
 import com.example.appointmentbooking.utility.JwtUtil;
 import lombok.RequiredArgsConstructor;
@@ -24,7 +23,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class AuthenticationController {
     private final JwtUtil jwtUtil;
-    private final UserRepository userRepository;
     private final AuthenticationService authenticationService;
 
     @PostMapping("/register")
